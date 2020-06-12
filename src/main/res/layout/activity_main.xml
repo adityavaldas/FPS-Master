@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/fbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Force FPS"
+        tools:layout_editor_absoluteX="137dp" />
+
+    <Button
+        android:id="@+id/abutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Auto FPS"
+        app:layout_constraintTop_toBottomOf="@+id/fbutton"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <Button
+        android:id="@+id/sbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="FPS Switch Stability"
+        app:layout_constraintTop_toBottomOf="@+id/abutton"
+        tools:layout_editor_absoluteX="174dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
